@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+@font-face {
+    font-family: 'Digital-7';
+    src: url('digital-7.ttf');
+}
+h3{
+    font-weight: 500;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: rgb(56, 214, 16);
+}
+body{
+    background-color: orangered;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color: aliceblue;
+    height:300px;
+    width: 400px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+    cursor: pointer;
+}
+
+
+.frame{
+    display: flex;
+    gap:3px;
+}
+
+.hrs,
+.min,
+.sec,
+.ms,.colon{
+    width: 50px;
+    height:50px; 
+    font-size: 50px;
+    text-align: center;
+    line-height:50px;
+    color:rgba(0,0,0,0.8);
+    font-family: 'Digital-7';
+}
+
+.colon{
+    width:10px;
+    height: 50px;
+
+}
+
+.buttons{
+    margin-top: 25px;
+}
+.buttons button{
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.start{
+    background-color: olivedrab;
+}
+.stop{
+    background-color: orange ;
+}
+.reset{
+    background-color: rgb(189, 103, 229);
+}
+
+.start-active,
+.stop-active{
+    pointer-events: none;
+    opacity:0.5;
+}
+
